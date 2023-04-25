@@ -8,6 +8,7 @@ body {
 	font-size: 1rem;
 }
 
+/* navigation bar */
 .navbar {
 	position: fixed;
 	top: 0;
@@ -42,17 +43,32 @@ body {
 }
 
 .navbar-links a:hover {
-  border-bottom: 3px solid;
-  border-bottom-color: #daab71;
+	border-bottom: 3px solid;
+	border-bottom-color: #daab71;
 }
 
 .navbar-links a.active {
-  border-bottom: 3px solid;
-  border-bottom-color: #daab71;
-  
+	border-bottom: 3px solid;
+	border-bottom-color: #daab71;
 }
 
-.banner-text {
+.heading {
+	line-height: 0;
+	font-size: 25px;
+	color: white;
+	padding-top: 8%;
+	text-align:center;
+}
+
+.heading p{
+	font-size: 15px;
+	color: white;
+	text-align:center;
+}
+
+
+/* home */
+.intro {
 	line-height: 0.7;
 	font-size: 20px;
 	color: white;
@@ -60,11 +76,49 @@ body {
 	margin-left: 20%;
 }
 
-.banner-text p{
+.intro p{
 	color: #999999;
 }
 
+.icons {
+	font-size: 2em;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+	opacity: 0.6;
+}
 
+td a, i { 
+	padding-right: 0.5em;
+}
 
+.social-icon:visited {
+	color: #daab71;
+	text-decoration: none;
+}
 
+.btn {
+	background-color: white;
+	color: #141d26;
+	border-color: 2px solid white;
+	border: none;
+	padding: 18px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'Poppins';
+	font-size: 20px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 18px
+}
 
+.btn:hover {
+	background-color: white;
+	color: #141d26;
+}
+
+.btn a:link {
+	text-decoration: none;
+	color: white;
+}
