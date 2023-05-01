@@ -140,3 +140,78 @@ td a, i {
 	text-decoration: none;
 	color: white;
 }
+
+.educational-bg {
+	margin-top: 3em;
+	display: grid;
+	place-items: center;
+  }
+  
+.education {
+	width: min(500px, 95vw);
+}
+  
+.education-heading {
+	padding-inline-start: 4rem;
+}
+  
+.education-heading h4 {
+	font-size: 2rem;
+	margin-block: 0.5rem;
+}
+  
+.education-content {
+	position: relative;
+	padding: 1rem 1rem 1rem 4rem;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+}
+
+.education-content h5 {
+	color: #ffffe5;
+	font-size: 1rem;
+	margin-block: 0;
+	margin-left: 2rem;
+}
+
+.education-content p {
+	color: rgba(153, 153, 153, 1);
+	font-size: 0.8rem;
+	margin-block-start: 1rem;
+	margin-block-end: 0;
+	margin-left: 2rem;
+}
+  
+.education-content .year {
+	position: absolute;
+	content: var(--year);
+	width: 2rem;
+	aspect-ratio: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.6rem;
+	color: white;
+	border-radius: 50%;
+	background-color: #daab71;
+	box-shadow: inset 0 0 0 1px white;
+	border: 1px solid #daab71;
+	left: 1rem;
+	top: 0.74rem;
+}
+
+.education-content:hover {
+	background-color: rgba(230, 230, 230, 0.48);
+	border-radius: 0.25rem;
+}
+
+.education-content:not(:last-child):before {
+	position: absolute;
+	content: "";
+	width: 4px;
+	background-color: #daab71;
+	left: calc(2rem - 2px);
+	top: 2.74rem;
+	bottom: -0.74rem;
+	z-index: -1;
+}
