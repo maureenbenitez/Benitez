@@ -17,6 +17,7 @@ body {
 	justify-content: space-between;
 	background-color: #141d26;
 	color: white;
+	z-index: 100;
 }
 
 .logo img {
@@ -314,7 +315,7 @@ td a, i {
 
 .proj1 img:hover,
 .proj2 img:hover,
-.slides img:hover {
+.mySlides img:hover {
 	box-shadow: 0 0 2px 1px #daab71;
 }
 
@@ -347,13 +348,18 @@ td a, i {
 	position: relative;
 }
 
-.slides img {
+.mySlides img {
 	object-position: center;
 	height: 300px;
+	width: 480px;
 	border: 1px solid #ffffe5;
 	border-radius: 4px;
 	padding: 5px;
 	box-shadow: 0 1px 2px 0 #ffffe5;
+}
+
+.slides {
+    display: none;
 }
 
 
