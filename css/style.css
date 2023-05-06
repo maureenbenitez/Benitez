@@ -313,7 +313,8 @@ td a, i {
 }
 
 .proj1 img:hover,
-.proj2 img:hover {
+.proj2 img:hover,
+.slides img:hover {
 	box-shadow: 0 0 2px 1px #daab71;
 }
 
@@ -340,3 +341,19 @@ td a, i {
 	  max-width: 500px;
 	}
 }
+
+.slideshow-container {
+	width: 480px;
+	position: relative;
+}
+
+.slides img {
+	object-position: center;
+	height: 300px;
+	border: 1px solid #ffffe5;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: 0 1px 2px 0 #ffffe5;
+}
+
+
