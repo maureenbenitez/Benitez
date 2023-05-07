@@ -142,6 +142,39 @@ td a, i {
 	color: white;
 }
 
+.title {
+	color: grey;
+}
+
+.button {
+	border: none;
+	outline: 0;
+	display: inline-block;
+	padding: 8px;
+	color: white;
+	background-color: #000;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+}
+
+.button::hover {
+	background-color: white;
+	color: black;
+	transition-duration: 0.4s;
+}
+
+.navbar 
+.navbar-links ul li:hover 
+.dropdown-options {
+	display: block;
+	position: fixed;
+	background-color: white;
+	box-shadow: 0 0 8px #000000b3;
+	z-index: 10;
+}
+
+/*about*/
 .educational-bg {
 	margin-top: 3em;
 	display: grid;
@@ -200,8 +233,7 @@ td a, i {
 	left: 1rem;
 	top: 0.74rem;
 }
-
-.education-content:hover {
+  .education-content:hover {
 	background-color: rgba(230, 230, 230, 0.48);
 	border-radius: 0.25rem;
 }
@@ -216,7 +248,8 @@ td a, i {
 	bottom: -0.74rem;
 	z-index: -1;
 }
-
+  
+/*portfolio*/  
 .proj span {
 	display: inline-block;
 	width: 415px;
@@ -307,6 +340,17 @@ td a, i {
 .proj2 img {
 	object-position: center;
 	height: 300px;
+	width: 470px;
+	border: 1px solid #ffffe5;
+	border-radius: 4px;
+	padding: 5px;
+	box-shadow: 0 1px 2px 0 #ffffe5;
+}
+
+.proj3 img {
+	object-position: center;
+	height: 300px;
+	width: 480px;
 	border: 1px solid #ffffe5;
 	border-radius: 4px;
 	padding: 5px;
@@ -315,6 +359,7 @@ td a, i {
 
 .proj1 img:hover,
 .proj2 img:hover,
+.proj3 img:hover,
 .mySlides img:hover {
 	box-shadow: 0 0 2px 1px #daab71;
 }
@@ -322,6 +367,7 @@ td a, i {
 .btn-code i {
 	color: #141d26;
 	font-size: 18px;
+
 }
   
 @media screen and (min-width: 768px) {
@@ -348,18 +394,18 @@ td a, i {
 	position: relative;
 }
 
+.slides {
+	display: none;
+}
+
 .mySlides img {
 	object-position: center;
 	height: 300px;
-	width: 480px;
+	width: 470px;
 	border: 1px solid #ffffe5;
 	border-radius: 4px;
 	padding: 5px;
 	box-shadow: 0 1px 2px 0 #ffffe5;
-}
-
-.slides {
-    display: none;
 }
 
 
