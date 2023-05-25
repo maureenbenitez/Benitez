@@ -10,6 +10,7 @@ body {
 
 /* navigation bar */
 .navbar {
+	margin-top: 20px;
 	top: 0;
 	width: 100%;
 	display: flex;
@@ -22,7 +23,7 @@ body {
 
 .logo img {
 	margin-left: 50px;
-	margin-top: 15px;
+	margin-top: 6px;
 	position: relative;
     float: left;
     width:  140px;
@@ -81,7 +82,7 @@ body {
 .avatar-image img {
 	float: right;
 	margin-right: 20%;
-	margin-top: 5%;
+	margin-top: 2%;
 	height: 400px;
 	width: 400px;
 	border-radius: 50%;
@@ -175,11 +176,71 @@ td a, i {
 }
 
 /*about*/
+.aboutme {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: #141d26;
+	color: #fff;
+}
+
+.container-about {
+	margin-top: 170px;
+	width: 100%;
+	height: 160px;
+	background-color: #ffffe5;
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.container-about img {
+	width: 300px;
+	height: 300px;
+	margin-bottom: 140px;
+}
+
+.about-desc {
+	margin-top: 20px;
+	text-align: justify;
+  	text-justify: inter-word;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-bottom: 40px;
+}
+
+.about-hleft {
+	text-align: center;
+	margin-right: 35px;
+	color: #141d26;
+	font-size: 40px;
+}
+
+.about-hright {
+	text-align: center;
+	margin-left: 10px;
+	color: #daab71;
+	font-size: 30px;
+}
+
+.about-desc p {
+	color: #999999;
+	font-size: 16px;
+}
+
+.about-desc p.indent {
+	text-indent: 100px;
+}
+
+
 .educational-bg {
-	margin-top: 3em;
+	margin-top: 2em;
 	display: grid;
 	place-items: center;
-  }
+}
   
 .education {
 	width: min(500px, 95vw);
@@ -210,7 +271,7 @@ td a, i {
 
 .education-content p {
 	color: rgba(153, 153, 153, 1);
-	font-size: 0.8rem;
+	font-size: 14px;
 	margin-block-start: 1rem;
 	margin-block-end: 0;
 	margin-left: 2rem;
@@ -405,22 +466,6 @@ td a, i {
 	height: 788px;
 	margin: auto;
 	position: relative;
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-}
-
-.wrapper {
-  	box-shadow: 0 0 10px 0 #daab71;
-}
-
-@media only screen and (min-width: 700px) {
-	.wrapper {
-		display: grid;
-		grid-template-columns: 1fr 2fr;
-	}
 }
 
 .lines {
