@@ -72,11 +72,11 @@ body {
 }
 
 .heading p{
+	font-family: 'Poppins';
 	font-size: 15px;
 	color: white;
 	text-align:center;
 }
-
 
 /* home */
 .avatar-image img {
