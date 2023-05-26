@@ -13,7 +13,7 @@
 		$stmt = $conn->prepare("insert into contact(name, email, message) values(?, ?, ?)");
 		$stmt->bind_param("sss", $name, $email, $message);
 		$execval = $stmt->execute();
-		header ("Location: contact.html");
+		header ("Location: ../contact.html");
 		$stmt->close();
 		$conn->close();
 	}
